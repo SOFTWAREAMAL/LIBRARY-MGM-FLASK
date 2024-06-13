@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROFILE</h1>
+    {% if session.admin_login %}
+    <h2>WELCOME {{session.u_name}}</h2>    
+    <a href="check_book_availability">check_book_availability</a>
+    {% else %}
+    <p>You not admin <a href="admin_login"></a></p>
+    {{% endif %}}
+</body>
+</html>

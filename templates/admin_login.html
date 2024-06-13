@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-image: url("{{url_for('static',filename='library1.jpg')}}");
+        background-size: cover;}
+    </style>
+</head>
+<body>
+    <h1> ADMIN LOGIN</h1>
+    <form  method = "POST" action="/" >
+        <label for="admin_name"> USER NAME:</label>
+        <input type="text" id="admin_name" name="admin_name" required><br><br>
+
+        <label for="admin_password"> PASSWORD:</label>
+        <input type="PASSWORD" id="admin_password" name="admin_password" required><br><br>
+
+        <input type="submit" value="Admin Login" ><br><br>
+
+    </form>
+
+
+</body>
+</html>

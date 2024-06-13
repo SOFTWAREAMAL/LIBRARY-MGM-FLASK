@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='stylesheet.css')}}">
+    <style>
+        body{background-image: url("{{url_for('static',filename='library5.jpg')}}");
+        background-size: cover;}
+    </style>
+
+</head>
+<body link="white" vlink="violet" alink="blue">
+    <h1>WELCOME TO LIBRARY</h1><br>
+    <h1>HOME PAGE</h1><br>
+    <a href="view">1.VIEW BOOK DETAILS</a><br><br>
+    <a href="check_book_availability">2.CHECK BOOK AVAILABILITY</a><br><br>
+    <a href="add_book">3.ADD BOOK DETAILS</a><br><br>
+    <a href="issue_book">4.ISSUE BOOK TO STUDENT</a><br><br>
+    <a href="return_book">5.STUDENT RETURN TO LIBRARY</a><br><br>
+
+    <button class="button"><a href="/">Admin Login</a></button>
+
+</body>
+</html>
